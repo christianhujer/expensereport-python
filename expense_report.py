@@ -1,6 +1,7 @@
 import locale
 from enum import Enum, unique, auto
 from datetime import datetime
+from typing import List
 
 
 @unique
@@ -16,7 +17,7 @@ class Expense:
 
 
 class ExpenseReport:
-    def print_report(self, expenses: [Expense]):
+    def print_report(self, expenses: List[Expense]):
         total = 0
         meals = 0
 
